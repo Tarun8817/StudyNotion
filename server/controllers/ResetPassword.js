@@ -45,7 +45,7 @@ exports.resetPasswordToken = async(req, res) =>{
 		console.log("DETAILS", updatedDetails);
 
 
-        const url = `http://localhost:3000/update-password/${token}`
+        const url = `https://study-notion-rizwan.vercel.app/update-password/${token}`
         mailSender(email, "Reset Password Link", `Password Reset Link : ${url}`);
 
         return res.status(200).json({
@@ -110,7 +110,7 @@ exports.resetPassword = async(req, res) =>{
             {password : hashPassword},
             {new: true}
         )
-        
+
         return res.status(200).json({
             success: true,
             message: "Password has been reset successfully",
