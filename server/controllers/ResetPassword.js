@@ -22,8 +22,7 @@ exports.resetPasswordToken = async(req, res) =>{
         // Check valid email id or not
         const user = await User.findOne({email : email});
 
-        console.log("step 4");
-        console.log("user -> ", user);
+       
         if(user === null){
             return res.stauts(400).json({
                 success: false,
@@ -42,7 +41,7 @@ exports.resetPasswordToken = async(req, res) =>{
 			},
 			{ new: true }
 		);
-		console.log("DETAILS", updatedDetails);
+		// console.log("DETAILS", updatedDetails);
 
 
         const url = `https://study-notion-rizwan.vercel.app/update-password/${token}`

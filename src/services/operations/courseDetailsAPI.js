@@ -1,7 +1,6 @@
 import { toast } from "react-hot-toast"
 
 import { updateCompletedLectures } from "../../slices/viewCourseSlice"
-// import { setLoading } from "../../slices/profileSlice";
 import { apiConnector } from "../apiconnector"
 import { courseEndpoints } from "../apis"
 
@@ -42,7 +41,8 @@ export const getAllCourses = async () => {
 }
 
 export const fetchCourseDetails = async (courseId) => {
-  const toastId = toast.loading("Loading...")
+  // const toastId = toast.loading("Loading...")  // why this loading appear twice ?
+
   //   dispatch(setLoading(true));
   let result = null
   try {
@@ -60,7 +60,7 @@ export const fetchCourseDetails = async (courseId) => {
     result = error.response.data
     // toast.error(error.response.data.message);
   }
-  toast.dismiss(toastId)
+  // toast.dismiss(toastId)
   //   dispatch(setLoading(false));
   return result
 }
