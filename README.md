@@ -27,6 +27,8 @@ This project is intended as a learning tool and can be used as a sample project 
 
 The project is set up to use postcss-cli to process your CSS files. You can add your own tailwind.config.js file to customize your Tailwind setup.
 
+
+### Install the required packages:
 ``` bash
 cd Study-Notion
 npm install
