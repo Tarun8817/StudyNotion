@@ -26,3 +26,11 @@ This project is intended as a learning tool and can be used as a sample project 
    git clone https://github.com/rizwan0713/Study-Notion.git
 
 The project is set up to use postcss-cli to process your CSS files. You can add your own tailwind.config.js file to customize your Tailwind setup.
+
+``` bash
+cd Study-Notion
+npm install
+
+cd server
+npm install
+
