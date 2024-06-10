@@ -27,13 +27,13 @@ This project is intended as a learning tool and can be used as a sample project 
    ```
 2.Install the required packages:
 
-```bash
-cd Study-Notion
-npm install 
+   ```bash
+   cd Study-Notion
+   npm install 
 
-cd server
-npm install
-```
+   cd server
+   npm install
+   ```
 3.Set up the environment variables:
 Create a .env file in the root directory and in the /server directory.
 Add the required environment variables, such as database connection details, JWT secret, and any other necessary configurations. Check the .env.example files for more info.
