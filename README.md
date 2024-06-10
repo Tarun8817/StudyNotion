@@ -25,7 +25,7 @@ This project is intended as a learning tool and can be used as a sample project 
    ```bash
    git clone https://github.com/rizwan0713/Study-Notion.git
    ```
-2. **Install the required packages:
+2.Install the required packages:
 
 ```bash
 cd Study-Notion
@@ -34,15 +34,15 @@ npm install
 cd server
 npm install
 ```
-3.**Set up the environment variables:
+3.Set up the environment variables:
 Create a .env file in the root directory and in the /server directory.
 Add the required environment variables, such as database connection details, JWT secret, and any other necessary configurations. Check the .env.example files for more info.
 
-4.**Start the development server.
+4.Start the development server.
 ```bash
 npm run dev
 ```
-5.**Open the project in your browser at http://localhost:3000 to view your project.
+5.Open the project in your browser at http://localhost:3000 to view your project.
 
 The project is set up to use postcss-cli to process your CSS files. You can add your own tailwind.config.js file to customize your Tailwind setup.
 
