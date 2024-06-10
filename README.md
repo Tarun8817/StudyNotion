@@ -21,7 +21,7 @@ This project is intended as a learning tool and can be used as a sample project 
 
 ## Installation
 
-1. **Clone the repository** to your local machine:
+1.**Clone the repository** to your local machine:
    ```bash
    git clone https://github.com/rizwan0713/Study-Notion.git
    ```
