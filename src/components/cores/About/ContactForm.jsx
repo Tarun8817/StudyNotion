@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { useForm } from 'react-hook-form'
 
 import countryCode from '../../../data/countrycode.json'
@@ -9,12 +9,24 @@ const ContactForm = () => {
         register, 
         reset,
         handleSubmit,
-        formState:{ errors }
+        formState:{ errors, isSubmitSuccessful }
     } = useForm();
 
     const onSubmit = (data) =>{
         console.log("Contact Data is ", data);
     }
+     useEffect(()=>{
+        if(isSubmitSuccessful){
+            reset({
+                email:"",
+                firstname:"",
+                lastname:"",
+                contactNumber:"",
+                message:"",
+
+            },[reset,isSubmitSuccessful])
+        }
+     })
 
   return (
     <form action="" onSubmit={handleSubmit(onSubmit)}
