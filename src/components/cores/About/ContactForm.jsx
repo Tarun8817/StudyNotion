@@ -38,7 +38,7 @@ const ContactForm = () => {
                 <label htmlFor="firstname">Enter First Name <sup>*</sup></label>
                 <input type="text"
                         placeholder='First Name'
-                        {...register("firstName", {required: true})}
+                        {...register("firstname", {required: true})}
                 />
                 {   errors.firstname && 
                     <span>First name is required</span>
