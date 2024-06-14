@@ -35,26 +35,26 @@ const ContactForm = () => {
 
         <div className='flex flex-wrap gap-4 w-full'>
             <div className='flex flex-1 min-w-[200px] flex-col gap-2'>
-                <label htmlFor="">Enter First Name <sup>*</sup></label>
+                <label htmlFor="firstname">Enter First Name <sup>*</sup></label>
                 <input type="text"
                         placeholder='First Name'
                         {...register("firstName", {required: true})}
                 />
-                {   errors.firstName && 
+                {   errors.firstname && 
                     <span>First name is required</span>
                 }
             </div>
             <div className='flex flex-1 min-w-[200px] flex-col gap-2'>
-                <label htmlFor="">Enter Last Name <sup>(Optional)</sup></label>
+                <label htmlFor="lastname">Enter Last Name <sup>(Optional)</sup></label>
                 <input type="text" 
                         placeholder='Last Name' 
-                        {...register('lastName')} 
+                        {...register('lastname')} 
                 />
             </div>
         </div>
 
         <div className='flex flex-col gap-2'>
-            <label htmlFor="">Email Address <sup>*</sup></label>
+            <label htmlFor="email">Email Address <sup>*</sup></label>
             <input type="text" 
                         placeholder='Enter Your Email Address'
                         {...register("email", {required: true})}
@@ -66,7 +66,7 @@ const ContactForm = () => {
         </div>
 
         <div className='flex flex-col gap-2'>
-            <label htmlFor="">Phone Number <sup>*</sup></label>
+            <label htmlFor="contactNumber">Phone Number <sup>*</sup></label>
             <div className='flex items-center gap-5'>
                 <select className='w-[56px]'
                     {...register("countryCode")}
@@ -94,7 +94,7 @@ const ContactForm = () => {
         </div>
 
         <div className='flex flex-col gap-2'>
-            <label htmlFor="">Message</label>
+            <label htmlFor="message">Message</label>
             <textarea name="" id="" cols="30" rows="8"
                 placeholder='Enter Your Message Here...'
                 {...register("message")}
