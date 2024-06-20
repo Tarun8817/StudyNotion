@@ -2,14 +2,14 @@ import React, { useState } from 'react';
 import Modal from 'react-modal';
 
 const DummyEmailModal = () => {
-  const [modalIsOpen, setModalIsOpen] = useState(false);
+  const [emailModalIsOpen, setEmailModalIsOpen] = useState(false);
 
   const openModal = () => {
-    setModalIsOpen(true);
+    setEmailModalIsOpen(true);
   };
 
   const closeModal = () => {
-    setModalIsOpen(false);
+    setEmailModalIsOpen(false);
   };
 
   return (
@@ -22,7 +22,7 @@ const DummyEmailModal = () => {
         
       </button>
       <Modal
-        isOpen={modalIsOpen}
+        isOpen={emailModalIsOpen}
         onRequestClose={closeModal}
         contentLabel="Dummy Email and Password"
         style={{
