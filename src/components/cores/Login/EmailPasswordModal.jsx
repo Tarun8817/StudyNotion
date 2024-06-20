@@ -18,7 +18,7 @@ const DummyEmailModal = () => {
         onClick={openModal}
         className="text-black font-medium bg-[#ffffff] rounded-full px-2 cursor-pointer animate-wave"
       >
-        Login Details
+        Login Detail
         
       </button>
       <Modal
