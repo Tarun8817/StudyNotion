@@ -41,6 +41,7 @@ const Course_Card = ({course, Height}) => {
             <p className="text-xl text-richblack-5">Rs. {course?.price}</p>
           </div>
         </div>
+   
       </Link>
     </>
   )

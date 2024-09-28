@@ -30,8 +30,11 @@ const Catalog = () => {
 
     useEffect(() => {
         const getCategoryDetails = async() => {
-            try{
+            try{              
+                console.log("get course details in pages/ Catalog" );
                 const res = await getCatalogaPageData(categoryId);
+                console.log("get course details in pages/ Catalog" ,res);
+                console.log("course through response",res?.data?.selectedCategory );
                 setCatalogPageData(res);
             }
             catch(error) {
@@ -90,7 +93,8 @@ const Catalog = () => {
                 } cursor-pointer`}
                 onClick={() => setActive(1)}
               >
-                Most Populer
+                Most Populer               
+
               </p>
               <p
                 className={`px-4 py-2 ${

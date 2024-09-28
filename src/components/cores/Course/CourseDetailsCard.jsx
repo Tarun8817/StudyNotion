@@ -79,6 +79,7 @@ function CourseDetailsCard({ course, setConfirmationModal, handleBuyCourse }) {
               <button onClick={handleAddToCart} className="blackButton">
                 Add to Cart
               </button>
+              
             )}
           </div>
           <div>

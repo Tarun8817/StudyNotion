@@ -15,7 +15,7 @@ const Login = () => {
     const [showPassword, setShowPassword] = useState(false);
 
     const [formdata, SetFormData] = useState({
-        email:"", password:"" 
+        email:"mastertech0713@gmail.com", password:"12345" 
     })
 
     const { email, password } = formdata;
@@ -35,7 +35,7 @@ const Login = () => {
 
   return (
     <form action="" className='flex flex-col gap-[12px] ' onSubmit={handleOnSubmit}>
-                      <DummyEmailModal />
+                      {/* <DummyEmailModal /> */}
                       
                     <div className='flexcolgap'>
                    
@@ -80,7 +80,7 @@ const Login = () => {
                         <button type='submit'
                             className='font-[500] text-[16px] leading-[24px] w-full text-center  py-[12px] px-[18px] lg:px-[24px] rounded-[8px] hover:scale-95 hover:shadow-none transition-all duration-200 flex items-center gap-2 justify-center text-richblack-900 bg-yellow-50 shadow-[inset_-2px_-2px_0px_rgba(255,255,255,0.51)'    
                         >
-                            Submit
+                            Login
                         </button>
    
                         
