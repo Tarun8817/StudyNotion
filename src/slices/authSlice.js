@@ -3,21 +3,22 @@ import { createSlice } from "@reduxjs/toolkit";
 const initialState = {
   signupData: null,
   loading: false,
-  token: localStorage.getItem("token") ? JSON.parse(localStorage.getItem("token")) : null,
+  token: localStorage.getItem("token") || null, // ✅ No JSON.parse here
 };
 
 const authSlice = createSlice({
   name: "auth",
   initialState: initialState,
   reducers: {
-    setSignupData(state, value) {
-      state.signupData = value.payload;
+    setSignupData(state, action) {
+      state.signupData = action.payload;
     },
-    setLoading(state, value) {
-      state.loading = value.payload;
+    setLoading(state, action) {
+      state.loading = action.payload;
     },
-    setToken(state, value) {
-      state.token = value.payload;
+    setToken(state, action) {
+      state.token = action.payload;
+      localStorage.setItem("token", action.payload); // ✅ Optional: persist token
     },
   },
 });

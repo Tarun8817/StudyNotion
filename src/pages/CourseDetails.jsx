@@ -189,7 +189,7 @@ function CourseDetails() {
               <div>
                 <p className="">
                   Created By {`${instructor.firstName} ${instructor.lastName}`}
-                  {/* created by Rizwan */}
+                
                 </p>
               </div>
               <div className="flex flex-wrap gap-5 text-lg">
