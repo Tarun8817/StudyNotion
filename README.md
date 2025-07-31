@@ -39,7 +39,6 @@ d-5328-4581-9e97-ad1622d7615a" src="https://github.com/user-attachments/assets/b
 3.About us Page:<img width="1887" height="964" alt="38cd78c0-901c-4342-a2f2-dea349e52a80" src="https://github.com/user-attachments/assets/49949344-e503-4bf3-a7da-95d9a2d7cbe1" />
 
 Create a .env file in the root directory and in the /server directory.
-Add the required environment variables, such <img width="1887" height="964" alt="38cd78c0-901c-4342-a2f2-dea349e52a80" src="https://github.com/user-attachments/assets/8d49b371-862e-4072-b42f-a27107600afb" />
 as database connection details, JWT secret, and any other necessary configurations. Check th<img width="1868" height="961" alt="fcad765c-44a3-4b5e-b50d-e477f1674e3f" src="https://github.com/user-attachments/assets/89ec6c51-6265-44de-8ed8-b47de690a259" />
 e .env.example files for more info.
 
