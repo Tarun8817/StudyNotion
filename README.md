@@ -31,16 +31,23 @@ This project is intended as a learning tool and can be used as a sample project 
    cd Study-Notion
    npm install 
 
-   cd server
+   cd server<img width="1905" height="932" alt="99eec84<img width="1755" height="933" alt="a4fb6426-b2a5-40f5-b3b1-8679fb4202e9" src="https://github.com/user-attachments/assets/5e0231e1-5d1a-430a-b3ef-32a015b09118" />
+d-5328-4581-9e97-ad1622d7615a" src="https://github.com/user-attachments/assets/b87dc93e-46c3-41a5-bf8f-eb3e25dca995" />
+
    npm install
    ```
-3.Set up the environment variables:
-Create a .env file in the root directory and in the /server directory.
-Add the required environment variables, such as database connection details, JWT secret, and any other necessary configurations. Check the .env.example files for more info.
+3.About us Page:<img width="1887" height="964" alt="38cd78c0-901c-4342-a2f2-dea349e52a80" src="https://github.com/user-attachments/assets/49949344-e503-4bf3-a7da-95d9a2d7cbe1" />
 
-4.Start the development server.
+Create a .env file in the root directory and in the /server directory.
+Add the required environment variables, such <img width="1887" height="964" alt="38cd78c0-901c-4342-a2f2-dea349e52a80" src="https://github.com/user-attachments/assets/8d49b371-862e-4072-b42f-a27107600afb" />
+as database connection details, JWT secret, and any other necessary configurations. Check th<img width="1868" height="961" alt="fcad765c-44a3-4b5e-b50d-e477f1674e3f" src="https://github.com/user-attachments/assets/89ec6c51-6265-44de-8ed8-b47de690a259" />
+e .env.example files for more info.
+
+4.Start the development server.<img width="1895" height="957" alt="HomePage" src="https://github.com/user-attachments/assets/ef709cbb-7c67-4091-aa6d-66807c94a547" />
+
 ```bash
-npm run dev
+npm run dev<img width="1895" height="957" alt="HomePage" src="https://github.com/user-attachments/assets/34cebdd4-758a-4454-8e99-1d095f220d91" />
+
 ```
 5.Open the project in your browser at http://localhost:3000 to view your project.
 
